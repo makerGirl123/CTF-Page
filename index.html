@@ -1,24 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Recovered Message Fragment</title>
+<title>Recovered Transmission Monitor</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#0b0f1a;
+    color:#00ff9c;
+    margin:0;
+}
+
+header{
+    background:#111827;
+    padding:20px;
+    text-align:center;
+    border-bottom:2px solid #00ff9c;
+}
+
+h1{
+    margin:0;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+    padding:20px;
+}
+
+.panel{
+    background:#111827;
+    border:1px solid #00ff9c;
+    padding:15px;
+}
+
+.log{
+    height:150px;
+    overflow:auto;
+    background:black;
+    padding:10px;
+    font-family:monospace;
+}
+
+.status{
+    color:#ffcc00;
+}
+
+.error{
+    color:#ff4a4a;
+}
+
+details{
+    margin-top:10px;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    border-top:2px solid #00ff9c;
+    background:#111827;
+}
+</style>
+
 </head>
 
 <body>
 
-<h1>Recovered Transmission</h1>
+<header>
+<h1>Recovered Transmission Monitor</h1>
+<p>Signal Recovery System v3.4</p>
+</header>
 
-<p>
-This page was recovered from the sender's browser history.
-Most of the content appears normal.
-However, the original sender may have left something behind.
-</p>
+<div class="container">
 
-<p>
-Agents should inspect this page carefully.
-</p>
+<div class="panel">
+<h2>System Status</h2>
+<p class="status">Signal integrity: 41%</p>
+<p class="status">Packet recovery: Partial</p>
+<p class="error">Warning: Data corruption detected</p>
+<p>Last recovery attempt: 09:41:12</p>
+</div>
 
-<!-- KLJK -->
+<div class="panel">
+<h2>Transmission Log</h2>
+<div class="log">
+<p>[09:41:02] Attempting packet reconstruction...</p>
+<p>[09:41:04] Fragment located</p>
+<p>[09:41:05] Encoding mismatch detected</p>
+<p>[09:41:07] Converting binary block</p>
+<p>[09:41:09] ASCII conversion complete</p>
+<p>[09:41:10] Encryption layer detected</p>
+<p class="error">[09:41:11] Packet corruption detected</p>
+<p>[09:41:12] Recovery halted</p>
+</div>
+</div>
+
+<div class="panel">
+<h2>Recovered Files</h2>
+
+<ul>
+<li>image_fragment.jpg</li>
+<li>transmission_log.txt</li>
+<li>packet_dump.bin</li>
+<li>message_partial.html</li>
+</ul>
+
+<details>
+<summary>Recovered Transmission Notes</summary>
+<p>Engineers attempted to reconstruct the message from several damaged packets.</p>
+<p>Some information may still be embedded within the recovered data structures.</p>
+
+<div class="log">
+<p>[note] Some fragments appear to be hidden within the document structure.</p>
+<p>[note] Investigators should examine the page carefully.</p>
+</div>
+
+<!-- corrupted fragment: KLJK -->
+
+</details>
+
+</div>
+
+</div>
+
+<footer>
+Recovered Transmission Interface
+</footer>
 
 </body>
 </html>
