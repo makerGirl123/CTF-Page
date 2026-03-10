@@ -6,19 +6,20 @@
 <style>
 body{
 font-family:Arial, sans-serif;
-background:#f0f2f5;
+background:#eef2f7;
 margin:0;
 }
 
 header{
 background:#1877f2;
 color:white;
-padding:15px;
-font-size:24px;
+padding:18px;
+font-size:26px;
+font-weight:bold;
 }
 
 .container{
-width:800px;
+width:750px;
 margin:auto;
 padding:20px;
 }
@@ -26,9 +27,9 @@ padding:20px;
 .profile{
 background:white;
 padding:15px;
-margin-bottom:20px;
 border-radius:8px;
-box-shadow:0 0 5px rgba(0,0,0,0.1);
+margin-bottom:20px;
+box-shadow:0 0 6px rgba(0,0,0,0.1);
 }
 
 .post{
@@ -36,13 +37,19 @@ background:white;
 padding:15px;
 margin-bottom:20px;
 border-radius:8px;
-box-shadow:0 0 5px rgba(0,0,0,0.1);
+box-shadow:0 0 6px rgba(0,0,0,0.1);
 }
 
-.comment{
+.post img{
+width:100%;
+border-radius:6px;
 margin-top:10px;
-padding-left:10px;
-border-left:3px solid #ddd;
+}
+
+.meta{
+color:gray;
+font-size:13px;
+margin-top:4px;
 }
 
 .location{
@@ -50,12 +57,24 @@ color:#1877f2;
 font-size:14px;
 }
 
-.meta{
-color:gray;
-font-size:13px;
+.comments{
+margin-top:10px;
 }
-</style>
 
+.comment{
+border-left:3px solid #ddd;
+padding-left:8px;
+margin-top:6px;
+font-size:14px;
+}
+
+.likes{
+font-size:13px;
+color:#555;
+margin-top:8px;
+}
+
+</style>
 </head>
 
 <body>
@@ -66,42 +85,96 @@ font-size:13px;
 
 <div class="profile">
 <h2>Jordan Carter</h2>
-<p class="meta">Birthday: July 14, 2011</p>
-<p class="meta">School: Lincoln Middle School</p>
-<p class="meta">Contact: jordan.carter@gmail.com</p>
-</div>
 
-<div class="post">
-<p>Just got to the airport! ✈️</p>
-<p>Can't wait for our **10-day trip to Hawaii** 🌴</p>
-<p class="location">📍 Huntsville International Airport</p>
-
-<div class="comment">
-<strong>Alex</strong>: That’s awesome!
-</div>
-
-<div class="comment">
-<strong>Maya</strong>: Have fun!
-</div>
+<p class="meta">🎂 Birthday: July 14, 2011</p>
+<p class="meta">🏫 School: Lincoln Middle School</p>
+<p class="meta">📧 jordan.carter@gmail.com</p>
 
 </div>
 
 <div class="post">
-<p>Finally got my new phone working!</p>
-<p>If anyone needs me text me at **256-555-4812**</p>
 
-<div class="comment">
-<strong>Chris</strong>: Congrats!
+<p>First soccer game of the season today ⚽</p>
+<p class="location">📍 Riverside Park</p>
+
+<img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2">
+
+<div class="likes">18 likes</div>
+
+<div class="comments">
+<div class="comment"><b>Alex:</b> Nice! Good luck!</div>
+<div class="comment"><b>Maya:</b> Score a goal!</div>
 </div>
 
 </div>
 
 <div class="post">
-<p>Walking home from school right now.</p>
+
+<p>Just got my new phone working!</p>
+<p>If anyone needs me text me at <b>256-555-4812</b></p>
+
+<div class="likes">11 likes</div>
+
+<div class="comments">
+<div class="comment"><b>Chris:</b> Congrats!</div>
+</div>
+
+</div>
+
+<div class="post">
+
+<p>Hanging out at the park after school.</p>
 <p class="location">📍 Pine Grove Park Trail</p>
 
-<div class="comment">
-<strong>Taylor</strong>: See you later!
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<div class="likes">22 likes</div>
+
+<div class="comments">
+<div class="comment"><b>Taylor:</b> That place is awesome.</div>
+</div>
+
+</div>
+
+<div class="post">
+
+<p>Just got to the airport ✈️</p>
+<p>Leaving for our <b>10 day Hawaii trip</b> 🌴</p>
+<p class="location">📍 Huntsville International Airport</p>
+
+<img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+
+<div class="likes">35 likes</div>
+
+<div class="comments">
+<div class="comment"><b>Sam:</b> Have fun!</div>
+<div class="comment"><b>Emma:</b> Bring me back something!</div>
+</div>
+
+</div>
+
+<div class="post">
+
+<p>Trying to learn Python coding today 💻</p>
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+
+<div class="likes">15 likes</div>
+
+<div class="comments">
+<div class="comment"><b>Jordan:</b> This is harder than I expected.</div>
+</div>
+
+</div>
+
+<div class="post">
+
+<p>Walking home from school right now.</p>
+
+<div class="likes">8 likes</div>
+
+<div class="comments">
+<div class="comment"><b>Riley:</b> See you tomorrow!</div>
 </div>
 
 </div>
